@@ -17,12 +17,12 @@ export default function Offers() {
                     </div>
                     <div className="col-lg-3">
                         <a href="#" className="item" data-tab="tab-3">
-                            <h5>Relax</h5>
+                            <h5>Unwind</h5>
                         </a>
                     </div>
                     <div className="col-lg-3">
                         <a href="#" className="item" data-tab="tab-4">
-                            <h5>Weddings</h5>
+                            <h5>Celebrate</h5>
                         </a>
                     </div>
                 </div>

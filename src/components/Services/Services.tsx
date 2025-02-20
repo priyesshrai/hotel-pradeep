@@ -1,79 +1,82 @@
 import React from 'react'
 
 export default function Services() {
-  return (
-    <section className="amenities section-padding bg-lightbrown">
-        <div className="container">
-            <div className="row justify-content-center align-items-center">
-                <div className="col-lg-4 col-md-12 mb-30">
-                    <div className="section-subtitle">Hotel Services</div>
-                    <div className="section-title">Amenities</div>
-                    <p className="mb-25">The experience elementum sesue in the aucantion alesun in sapien fermen miss caleustion in the sapien.</p> <a href="amenities.html" className="button-3">All Amenities</a>
-                </div>
-                <div className="col-lg-8 col-md-12">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6">
-                            <div className="item hover-box mb-25">
-                                <div className="cont up">
-                                    <div className="icon"> <i className="fa-thin fa-truck-plane"></i> </div>
-                                    <div className="text">
-                                        <h5>Pick Up & Drop</h5>
-                                        <p>Lorem ipsum is simply dummy fermen.</p>
+    return (
+        <section className="amenities section-padding bg-lightbrown">
+            <div className="container">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-lg-4 col-md-12 mb-30">
+                        <div className="section-subtitle">EXPERIENCE COMFORT</div>
+                        <div className="section-title">FACILITIES</div>
+                        <p className="mb-25">The Hotel PRADEEP offers elegance and comfort, blending modern luxury with warm hospitality for a truly refined experience.</p>
+                    </div>
+                    <div className="col-lg-8 col-md-12">
+                        <div className="row">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="item hover-box">
+                                    <div className="cont up">
+                                        <div className="icon"> <i className="fa-thin fa-bed-front"></i> </div>
+                                        <div className="text">
+                                            <h5>24-Hour Room Service</h5>
+                                            <p>Enjoy round-the-clock in-room dining.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="item hover-box mb-25">
-                                <div className="cont up">
-                                    <div className="icon"> <i className="fa-thin fa-circle-parking"></i> </div>
-                                    <div className="text">
-                                        <h5>Parking Space</h5>
-                                        <p>Lorem ipsum is simply dummy fermen.</p>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="item hover-box">
+                                    <div className="cont up">
+                                        <div className="icon"> <i className="fa-thin fa-refrigerator"></i> </div>
+                                        <div className="text">
+                                            <h5>Refrigerator</h5>
+                                            <p>Keep your drinks and snacks chilled anytime.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="item hover-box mb-25">
-                                <div className="cont up">
-                                    <div className="icon"> <i className="fa-thin fa-bed-front"></i> </div>
-                                    <div className="text">
-                                        <h5>Room Service</h5>
-                                        <p>Lorem ipsum is simply dummy fermen.</p>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="item hover-box ">
+                                    <div className="cont up">
+                                        <div className="icon"> <i className="fa-thin fa-phone-office"></i> </div>
+                                        <div className="text">
+                                            <h5>Telephone</h5>
+                                            <p>Stay connected with in-room calling service.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="item hover-box mb-25">
-                                <div className="cont up">
-                                    <div className="icon"> <i className="fa-thin fa-water-ladder"></i> </div>
-                                    <div className="text">
-                                        <h5>Swimming Pool</h5>
-                                        <p>Lorem ipsum is simply dummy fermen.</p>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="item hover-box ">
+                                    <div className="cont up">
+                                        <div className="icon"> <i className="fa-thin fa-print"></i> </div>
+                                        <div className="text">
+                                            <h5>Xerox and Fax Facilities</h5>
+                                            <p> Convenient document copying and fax services.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="item hover-box mb-25">
-                                <div className="cont up">
-                                    <div className="icon"> <i className="fa-thin fa-wifi"></i> </div>
-                                    <div className="text">
-                                        <h5>Fibre Internet</h5>
-                                        <p>Lorem ipsum is simply dummy fermen.</p>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="item hover-box ">
+                                    <div className="cont up">
+                                        <div className="icon"> <i className="fa-thin fa-washing-machine"></i></div>
+                                        <div className="text">
+                                            <h5>Laundry Service</h5>
+                                            <p>Quick and professional garment cleaning service.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="item hover-box mb-25">
-                                <div className="cont up">
-                                    <div className="icon"> <i className="fa-thin fa-mug-saucer"></i> </div>
-                                    <div className="text">
-                                        <h5>Breakfast</h5>
-                                        <p>Lorem ipsum is simply dummy fermen.</p>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="item hover-box ">
+                                    <div className="cont up">
+                                        <div className="icon"> <i className="fa-thin fa-stethoscope"></i></div>
+                                        <div className="text">
+                                            <h5>Doctor on Call</h5>
+                                            <p>Medical assistance available anytime for emergencies.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +84,6 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }

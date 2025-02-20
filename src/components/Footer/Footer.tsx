@@ -8,8 +8,14 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-md-4 mb-30">
                             <div className="item">
-                                <div className="logo"><img src="img/logo-light.png" alt="" /></div>
-                                <p>Lorem ipsum is simply dummy text of the printe and type setting industry in the fermen.</p>
+                                <div className="logo-with-name-container">
+                                    <a className="logo" href="/"> <img src="/img/logo/logo_trans.png" className="logo-img" alt="" /></a>
+                                    <div className='hotel-name'>
+                                        <span className='fir'>HOTEL</span>
+                                        <span>PRADEEP</span>
+                                    </div>
+                                </div>
+                                <p>Hotel Pradeep offers a comfortable stay with warm hospitality in the heart of Varanasi. Enjoy delicious dining at Poonam and a scenic rooftop experience at Eden.</p>
                                 <div className="social-icons">
                                     <ul className="list-inline">
                                         <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -22,17 +28,17 @@ export default function Footer() {
                         <div className="col-md-3 offset-md-1 mb-30">
                             <div className="item">
                                 <h3>Contact us</h3>
-                                <p>0665 Broadway st.
-                                    <br />10234 NY, USA
+                                <p>Jagatganj, Varanasi-221002
+                                    <br />(U.P.) India
                                 </p>
-                                <div className="phone"><a href="tel:+410315520900">+1 123 567 8910</a></div>
-                                <div className="mail"><a href="mailto:hi@rixoshotel.com">hi@rixoshotel.com</a></div>
+                                <div className="phone"><a href="tel:+9105422204963"> +91 0542-2204963, 2207231   </a></div>
+                                <div className="mail"><a href="mailto:info@hotelpradeep.com">info@hotelpradeep.com</a></div>
                             </div>
                         </div>
                         <div className="col-md-4 mb-30">
                             <div className="item">
-                                <h3>Subscribe</h3>
-                                <p>Want to be notified about our services. Just sign up and we'll send you a notification by email.</p>
+                                <h3>Join Us</h3>
+                                <p>Receive exclusive updates about our services directly in your email.</p>
                                 <div className="newsletter">
                                     <form action="#">
                                         <input type="email" placeholder="Email Address" required />
@@ -47,20 +53,20 @@ export default function Footer() {
             <div className="bottom">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8 col-md-12">
+                        <div className="col-lg-6 col-md-12">
                             <div className="links">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="blog1.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="rooms">Rooms</a></li>
+                                    <li><a href="facilities">Facilities</a></li>
+                                    <li><a href="restaurant">Restaurant</a></li>
+                                    <li><a href="contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-12 text-end">
-                            <p>Copyright 2025 by <a href="#">DuruThemes</a></p>
+                        <div className="col-lg-6 col-md-12 text-end">
+                            <p>Copyright {new Date().getFullYear()} Hotel Pradeep. Developed by <a href="https://wizards.co.in/">Wizards.</a></p>
                         </div>
                     </div>
                 </div>

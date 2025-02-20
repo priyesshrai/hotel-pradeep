@@ -95,8 +95,8 @@ $(function () {
             , loop: true
             , dots: true
             , margin: 0
-            , autoplay: false
-            , autoplayTimeout: 5000
+            , autoplay: true
+            , autoplayTimeout: 3000
             , nav: true
             , navText: ['<i class="fa-light fa-angle-left" aria-hidden="true"></i>', '<i class="fa-light fa-angle-right" aria-hidden="true"></i>']
             , responsiveClass: true
@@ -117,7 +117,7 @@ $(function () {
             , loop: true
             , dots: true
             , margin: 0
-            , autoplay: false
+            , autoplay: true
             , autoplayTimeout: 5000
             , animateOut: 'fadeOut'
             , nav: true
@@ -172,7 +172,7 @@ $(function () {
         , margin: 20
         , mouseDrag: true
         , autoplay: true
-        , autoplayTimeout: 5000
+        , autoplayTimeout: 3000
         , dots: false
         , autoplayHoverPause: true
         , nav: false
@@ -196,9 +196,9 @@ $(function () {
         loop: true
         , margin: 20
         , mouseDrag: true
-        , autoplay: false
-        , autoplayTimeout: 5000
-        , dots: false
+        , autoplay: true
+        , autoplayTimeout: 4000
+        , dots: true
         , autoplayHoverPause: true
         , nav: false
         , navText: ["<span class='fa-light fa-angle-left'></span>", "<span class='fa-light fa-angle-right'></span>"]
@@ -222,8 +222,8 @@ $(function () {
         , items: 2 
         , margin: 20
         , mouseDrag: true
-        , autoplay: false
-        , autoplayTimeout: 5000
+        , autoplay: true
+        , autoplayTimeout: 3000
         , dots: false
         , autoplayHoverPause: true
         , nav: false
@@ -247,8 +247,8 @@ $(function () {
         loop: true,
         margin: 30,
         mouseDrag: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 4000,
         dots: true,
         nav: true,
         navText: ["<span class='fa-light fa-angle-left'></span>", "<span class='fa-light fa-angle-right'></span>"],
@@ -274,8 +274,8 @@ $(function () {
         , loop: true
         , margin: 30
         , mouseDrag: true
-        , autoplay: false
-        , autoplayTimeout: 5000
+        , autoplay: true
+        , autoplayTimeout: 4000
         , dots: false
         , nav: true
         , navText: ['<i class="fa-light fa-angle-left"></i>', '<i class="fa-light fa-angle-right"></i>']

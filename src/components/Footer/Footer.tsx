@@ -56,7 +56,7 @@ export default function Footer() {
                         <div className="col-lg-6 col-md-12">
                             <div className="links">
                                 <ul>
-                                    <li><a href="/">Home</a></li>
+{/*                                     <li><a href="/">Home</a></li> */}
                                     <li><a href="about">About</a></li>
                                     <li><a href="rooms">Rooms</a></li>
                                     <li><a href="facilities">Facilities</a></li>

@@ -29,10 +29,10 @@ export default function Testimonials() {
                                     <i className="star-rating"></i>
                                     <i className="star-rating"></i>
                                 </span>
-                                    <h5>Location was excellent. The staff was incredible. Hotel was great. A great experience all around.</h5>
+                                    <h5>My experience of Hotel Pradeep is excellent, I thank all the staff members especially G M Mr Anil ,who attends all the guests with great gesture and whole heartedly. We felt like a homely atmosphere. I also thank the Chef for service us the devious food items. I wish I may come again. I will also suggest all my friends and relatives,if they get the chance to visit Varanasi, they must enjoy Hotel Pradeep's hospitality. Thanks.</h5>
                                     <div className="info">
                                         <div className="cont">
-                                            <h6>Emily F. <i>|</i> <span><a href="#">View on Tripadvisor</a></span></h6>
+                                            <h6>Neerja Sharma <i>|</i> <span><a href="#">View on Google</a></span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -43,10 +43,11 @@ export default function Testimonials() {
                                     <i className="star-rating"></i>
                                     <i className="star-rating"></i>
                                 </span>
-                                    <h5>A great experience all around! Hotel was great. Location was excellent. The staff was incredible.</h5>
+                                    <h5>Nice place to stay in Varanasi.. centrally located.. rooms are good..staff is very cooperative and helpful. Overall Value for money..
+                                        Askfor Car parking..they have hidden place 😀 in a kothi for safe and guarded car parking.</h5>
                                     <div className="info">
                                         <div className="cont">
-                                            <h6>Enrico T. <i>|</i> <span><a href="#">View on Tripadvisor</a></span></h6>
+                                            <h6>Sachin Jain<i>|</i> <span><a href="#">View on Google</a></span></h6>
                                         </div>
                                     </div>
                                 </div>

@@ -2,6 +2,7 @@ import About from '@/components/About/About'
 import Booking from '@/components/Booking/Booking'
 import Facilities from '@/components/Facilities/Facilities'
 import Slider from '@/components/Hero/Slider'
+import HomeGallery from '@/components/HomeGallery/HomeGallery'
 import Offers from '@/components/Offers/Offers'
 import Pricing from '@/components/Pricing/Pricing'
 import Rooms from '@/components/Rooms/Rooms'
@@ -21,6 +22,7 @@ export default function page() {
     <Services/>
     {/* <Video/> */}
     <Pricing/>
+    <HomeGallery/>
     <Offers/>
     <Booking/>
     </>

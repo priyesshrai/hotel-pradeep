@@ -3,7 +3,7 @@ import React from 'react'
 export default function page() {
     return (
         <>
-            <section className="banner-header valign bg-img bg-fixed" data-overlay-dark="5" data-background="img/rooms/02.jpg">
+            <section className="banner-header valign bg-img bg-fixed" data-overlay-dark="5" data-background="/img/rooms/banner-03.jpg">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">

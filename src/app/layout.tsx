@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
 
+        <link rel="shortcut icon" href="/img/logo/logo_trans.png" type="image/x-icon" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Urbanist:wght@300;400;500;600&amp;display=swap" />
         <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/style.css" />

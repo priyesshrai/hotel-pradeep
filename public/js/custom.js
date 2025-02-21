@@ -342,8 +342,8 @@ $(function () {
         loop: true
         , margin: 20
         , mouseDrag: true
-        , autoplay: false
-        , autoplayTimeout: 5000
+        , autoplay: true
+        , autoplayTimeout: 2500
         , dots: true
         , autoplayHoverPause: true
         , nav: false

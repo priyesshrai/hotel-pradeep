@@ -23,8 +23,8 @@ export default function page() {
                                     <div className="item">
                                         <div className="front">
                                             <div className="contents"> <span className="fa-thin fa-location-dot"></span>
-                                                <h2 className="title">Rixos Hotel, USA</h2>
-                                                <p className="text">65 Broad st. 01234 NY. USA</p>
+                                                <h2 className="title">Hotel Pradeep, Varanasi</h2>
+                                                <p className="text">Jagatganj, Varanasi-221002 (U.P.) India</p>
                                             </div>
                                         </div>
                                         <div className="back"> <img className="img img-fluid" src="img/contact2.jpg" />
@@ -39,7 +39,7 @@ export default function page() {
                                         <div className="front">
                                             <div className="contents"> <span className="fa-thin fa-phone"></span>
                                                 <h2 className="title">Let's talk with us</h2>
-                                                <p className="text">Phone: +1 234 567 8910</p>
+                                                <p className="text">Phone: +91 0542-2204963, 2207231</p>
                                             </div>
                                         </div>
                                         <div className="back"> <img className="img img-fluid" src="img/contact3.jpg" />

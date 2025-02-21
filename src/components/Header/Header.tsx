@@ -8,7 +8,7 @@ export default function Header() {
         { label: 'Home', href: '/' },
         { label: 'About', href: '/about' },
         { label: 'Rooms', href: '/rooms' },
-        { label: 'Facilities', href: '/services' },
+        { label: 'Facilities', href: '/facilities' },
         { label: 'Restaurant', href: '/restaurant' },
         { label: 'Contact', href: '/contact' },
     ];

@@ -1265,12 +1265,12 @@ blockquote cite:before {
     color: #2d3091;
     /* font-family: "Gilda Display", serif; */
 
-    .fir{
-        font-size: 25px;
-        font-weight: 400;
+    .fir {
+      font-size: 25px;
+      font-weight: 400;
     }
-    span{
-        font-weight: 800;
+    span {
+      font-weight: 800;
     }
   }
 }
@@ -2002,7 +2002,7 @@ blockquote cite:before {
   position: relative;
   background-position: center;
   background-size: cover;
-  background-color: #2D3091;
+  background-color: #2d3091;
   padding: 20px;
 }
 .banner-header.middle-height {
@@ -2744,11 +2744,11 @@ blockquote cite:before {
   z-index: 1;
 }
 .facilities2 ul.tab-buttons li.tab-btn.active-btn {
-  color: #2D3091;
-  border-bottom: 3px solid #2D3091;
+  color: #2d3091;
+  border-bottom: 3px solid #2d3091;
 }
 .facilities2 ul.tab-buttons li:hover.tab-btn {
-  border-bottom: 3px solid #2D3091;
+  border-bottom: 3px solid #2d3091;
 }
 .facilities2 .tabs-content {
   position: relative;
@@ -2789,7 +2789,7 @@ blockquote cite:before {
   }
 
   .facilities2 ul.tab-buttons li.tab-btn.active-btn {
-    border-bottom: 3px solid #2D3091 !important;
+    border-bottom: 3px solid #2d3091 !important;
   }
   .facilities2 .tab-buttons .tab-btn:last-child {
     border-bottom: 0px solid #e5e2dd;
@@ -3722,7 +3722,7 @@ blockquote cite:before {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-position:center center;
+  object-position: center center;
   object-fit: cover;
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
@@ -5112,9 +5112,11 @@ body.mfp-zoom-out-cur {
   backdrop-filter: blur(5px);
 }
 .form1 {
-  display: block;
+  display: flex;
   padding: 0;
   position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .form1 label {
   display: none;
@@ -5233,7 +5235,7 @@ body.mfp-zoom-out-cur {
   position: relative;
   font-weight: 400;
 }
-.input1_inner:after {
+/* .input1_inner:after {
   content: "";
   display: block;
   position: absolute;
@@ -5246,13 +5248,13 @@ body.mfp-zoom-out-cur {
   color: #fff;
   line-height: 1;
   font-weight: 400;
-}
+} */
 .input1_inner input {
   display: block;
   width: 100%;
   font-size: 17px;
   color: #fff;
-  padding: 18.25px 40px 18.25px 20px;
+  padding: 18.25px;
   border: none;
   box-shadow: none;
   border-radius: 0;
@@ -5875,14 +5877,13 @@ body.mfp-zoom-out-cur {
   }
 }
 
-
-.img-container{
+.img-container {
   position: relative;
   width: 100%;
   height: auto;
   cursor: pointer;
   overflow: hidden;
-  img{
+  img {
     width: 100%;
     height: 27rem;
     object-fit: cover;
@@ -5891,8 +5892,8 @@ body.mfp-zoom-out-cur {
     border-radius: 10px;
   }
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 30%;
@@ -5905,7 +5906,7 @@ body.mfp-zoom-out-cur {
     transition: all 0.3s ease;
   }
 
-  .img-content{
+  .img-content {
     position: absolute;
     /* bottom: 0; */
     color: white;
@@ -5916,36 +5917,36 @@ body.mfp-zoom-out-cur {
     transition: transform 0.3s ease;
     line-height: 1.1;
 
-    h3{
+    h3 {
       font-size: 24px;
       font-weight: 700;
-      margin:0 0 20px 0;
+      margin: 0 0 20px 0;
       color: white;
     }
-    .img-desc{
+    .img-desc {
       color: #dadada;
       font-size: 15px;
     }
   }
 
-  &:hover .img-content{
+  &:hover .img-content {
     transform: translateY(-120px);
   }
-  &:hover::after{
+  &:hover::after {
     height: 100%;
     backdrop-filter: blur(2px);
     border-radius: 10px;
   }
 }
 
-.logo-with-name-container{
+.logo-with-name-container {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 
-  .logo{
+  .logo {
     margin: 0 !important;
   }
   .hotel-name {
@@ -5959,15 +5960,92 @@ body.mfp-zoom-out-cur {
     color: #2d3091;
     /* font-family: "Gilda Display", serif; */
 
-    .fir{
-        font-size: 30px;
-        font-weight: 400;
+    .fir {
+      font-size: 30px;
+      font-weight: 400;
     }
-    span{
-        font-weight: 800;
+    span {
+      font-weight: 800;
     }
   }
 }
 .footer .top .item .logo {
   width: 145px;
+}
+
+.rn::after {
+  display: none !important;
+  padding-right: 5px;
+}
+
+.form-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(3px);
+  padding: 50px;
+
+  .form-section-wraper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-form-container {
+      position: relative;
+      max-width: 500px;
+      width: 100%;
+      padding: 40px 20px 20px 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 90vh;
+      overflow: scroll;
+
+      .main-input-container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+
+        input,
+        textarea,
+        select {
+          border-radius: 8px !important;
+        }
+        button {
+          border-radius: 50px !important;
+          background-color: #2d3091;
+          color: white;
+          padding: 10px 40px;
+          font-size: 20px;
+          margin-left: auto;
+          display: block;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
+
+.colse-btn{
+  position: absolute;
+  top: 5px;
+  right:5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2d3091;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+
 }

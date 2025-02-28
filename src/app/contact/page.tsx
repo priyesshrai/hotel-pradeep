@@ -4,12 +4,11 @@ import React from 'react'
 export default function page() {
     return (
         <>
-            <section className="banner-header valign bg-img bg-fixed" data-overlay-dark="5" data-background="img/contact.jpg">
+            <section className="banner-header valign bg-img bg-fixed">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <div className="subtitle">Get in touch</div>
-                            <div className="title">Contact us</div>
+                            <div className="title">COntact Us</div>
                         </div>
                     </div>
                 </div>
@@ -96,7 +95,7 @@ export default function page() {
                     </div>
                 </div>
             </section>
-            <section className="faqs section-padding">
+            {/* <section className="faqs section-padding">
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-5 col-md-12 mb-30">
@@ -142,7 +141,7 @@ export default function page() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <Booking />
         </>
     )

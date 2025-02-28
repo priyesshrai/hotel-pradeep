@@ -9,7 +9,6 @@ export default function page() {
         "img/restaurant/3.jpg",
         "img/restaurant/4.jpg",
         "img/restaurant/5.jpg",
-        "img/restaurant/6.jpg",
     ]
     return (
         <>
@@ -17,8 +16,8 @@ export default function page() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-12 text-center">
-                            <div className="subtitle text-light">Address of taste</div>
-                            <div className="title mb-0">Poonam Restaurant</div>
+                            {/* <div className="subtitle text-light">Address of taste</div> */}
+                            <div className="title mb-0">About Poonam Restaurant</div>
                         </div>
                     </div>
                 </div>
@@ -28,13 +27,14 @@ export default function page() {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="section-subtitle">Address of taste</div>
-                            <div className="section-title">About Restaurant</div>
+                            <div className="section-title">Poonam Restaurant – A Taste of Banaras
+                            </div>
                         </div>
                     </div>
                     <div className="row mb-30">
                         <div className="col-md-12">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo sequi quisquam eos enim provident incidunt repellendus sit totam minus! Doloribus praesentium, officiis fugit, deleniti rem natus recusandae autem animi architecto alias aspernatur? Doloremque in, quae cum perspiciatis mollitia vero?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempora quia, cumque enim possimus ad atque accusamus, quam praesentium ipsam fugit quibusdam consectetur iure a maiores eum fugiat pariatur.</p>
+                            <p>Welcome to Poonam Restaurant, where we serve delicious food with the warmth of Banarasi hospitality. Our menu includes a variety of dishes, from traditional Banarasi flavors to popular Indian and international meals. Every dish is prepared with fresh ingredients to give you the best taste and quality. Whether you are craving local favorites or looking to try something new, we have something for everyone.</p>
+                            <p>With a cozy and elegant setting, Poonam Restaurant is the perfect place to enjoy a relaxing meal with family and friends. Our friendly staff ensures you have a comfortable and enjoyable dining experience. Visit us and savor the rich flavors of Banaras in every bite!</p>
                         </div>
                     </div>
                     <div className="row mb-30">

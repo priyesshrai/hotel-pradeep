@@ -85,22 +85,19 @@ export default function page() {
                         <div className="col-md-12">
                             <div className="owl-carousel owl-theme">
                                 <div className="item">
-                                    <a href="#"><img src="img/clients/1.png" alt="" /></a>
+                                    <a href="#"><img src="/img/clients/1.jpg" alt="" /></a>
                                 </div>
                                 <div className="item">
-                                    <a href="#"><img src="img/clients/2.png" alt="" /></a>
+                                    <a href="#"><img src="/img/clients/2.jpg" alt="" /></a>
                                 </div>
                                 <div className="item">
-                                    <a href="#"><img src="img/clients/3.png" alt="" /></a>
+                                    <a href="#"><img src="/img/clients/3.jpg" alt="" /></a>
                                 </div>
                                 <div className="item">
-                                    <a href="#"><img src="img/clients/4.png" alt="" /></a>
+                                    <a href="#"><img src="/img/clients/4.jpg" alt="" /></a>
                                 </div>
                                 <div className="item">
-                                    <a href="#"><img src="img/clients/5.png" alt="" /></a>
-                                </div>
-                                <div className="item">
-                                    <a href="#"><img src="img/clients/6.png" alt="" /></a>
+                                    <a href="#"><img src="/img/clients/5.jpg" alt="" /></a>
                                 </div>
                             </div>
                         </div>

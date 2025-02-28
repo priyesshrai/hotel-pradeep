@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Script from "next/script";
 import Footer from "@/components/Footer/Footer";
+import AppProvider from "./context/Context";
 
 export const metadata: Metadata = {
   title: "Hotel Pradeep",
@@ -40,9 +41,11 @@ export default function RootLayout({
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
           </svg>
         </div>
-        <Header />
-        {children}
-        <Footer />
+        <AppProvider >
+          <Header />
+          {children}
+          <Footer />
+        </AppProvider>
 
 
         <Script strategy="afterInteractive" src="/js/jquery-3.7.1.min.js"></Script>

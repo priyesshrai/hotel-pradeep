@@ -1,8 +1,11 @@
 'use client';
 import React from 'react';
 import { usePathname } from 'next/navigation';
+import { useAppContext } from '@/app/context/Context';
+
 
 export default function Header() {
+    const { isFormOpen, setIsFormOpen} = useAppContext();
     const pathname = usePathname();
     const navItems = [
         { label: 'Home', href: '/' },
@@ -10,7 +13,7 @@ export default function Header() {
         { label: 'Rooms', href: '/rooms' },
         { label: 'Dining', href: '/dining' },
         { label: 'Facilities', href: '/facilities' },
-        { label: 'Tarrif', href: '/tarrif' },
+        { label: 'Tariff', href: '/tariff' },
         { label: 'Contact', href: '/contact' },
     ];
 
@@ -87,7 +90,7 @@ export default function Header() {
                             ))}
                         </ul>
                         <div className="navbar-right">
-                            <a className="button" href="#">
+                            <a className="button" href="#" onClick={() => setIsFormOpen(!isFormOpen)}>
                                 <i className="fa-solid fa-calendar-check"></i> Book Now
                             </a>
                         </div>

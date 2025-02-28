@@ -17,7 +17,7 @@ export default function Offers() {
                     </div>
                     <div className="col-lg-3">
                         <a href="#" className="item" data-tab="tab-3">
-                            <h5>Cheers</h5>
+                            <h5>Sip</h5>
                         </a>
                     </div>
                     <div className="col-lg-3">

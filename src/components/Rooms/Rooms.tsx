@@ -13,26 +13,6 @@ export default function Rooms() {
                 <div className="col-md-12">
                     <div className="owl-carousel owl-theme">
                         <div className="item">
-                            <div className="img">
-                                <img src="/img/rooms/delux.jpg" className="img-fluid" alt="" />
-                            </div>
-                            <div className="cont">
-                                <div className="title">
-                                    <a href="#">Deluxe</a>
-                                </div>
-                                <div className="details">
-                                    <span>
-                                        <i className="fa-thin fa-bath"></i>
-                                        1 Attached Bathroom
-                                    </span>
-                                    <span>
-                                        <i className="fa-thin fa-expand"></i>
-                                        Television
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
                             <div className="img"><img src="/img/rooms/super-delux.jpg" className="img-fluid" alt="" /></div>
                             <div className="cont">
                                 <div className="title">
@@ -40,12 +20,20 @@ export default function Rooms() {
                                 </div>
                                 <div className="details">
                                     <span>
+                                        <i className="fa-thin fa-user"></i>
+                                        1-2 guests
+                                    </span>
+                                    <span>
                                         <i className="fa-thin fa-bath"></i>
                                         1 Attached Bathroom
                                     </span>
                                     <span>
                                         <i className="fa-thin fa-expand"></i>
                                         Television
+                                    </span>
+                                    <span>
+                                        <i className="fa-thin fa-wifi"></i>
+                                        WiFi
                                     </span>
                                 </div>
                             </div>
@@ -58,12 +46,52 @@ export default function Rooms() {
                                 </div>
                                 <div className="details">
                                     <span>
+                                        <i className="fa-thin fa-user"></i>
+                                        2-3 guests
+                                    </span>
+                                    <span>
                                         <i className="fa-thin fa-bath"></i>
-                                        2 Attached Bathroom
+                                        1 Attached Bathroom
                                     </span>
                                     <span>
                                         <i className="fa-thin fa-expand"></i>
                                         Television
+                                    </span>
+                                    <span>
+                                        <i className="fa-thin fa-wifi"></i>
+                                        WiFi
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="img">
+                                <img src="/img/rooms/delux.jpg" className="img-fluid" alt="" />
+                            </div>
+                            <div className="cont">
+                                <div className="title">
+                                    <a href="#">Deluxe</a>
+                                </div>
+                                <div className="details">
+                                    <span>
+                                        <i className="fa-thin fa-user"></i>
+                                        1-2 guests
+                                    </span>
+                                    <span>
+                                        <i className="fa-thin fa-bed-front"></i>
+                                        King Size Bed
+                                    </span>
+                                    <span>
+                                        <i className="fa-thin fa-bath"></i>
+                                        1 Attached Bathroom
+                                    </span>
+                                    <span>
+                                        <i className="fa-thin fa-expand"></i>
+                                        Television
+                                    </span>
+                                    <span>
+                                        <i className="fa-thin fa-wifi"></i>
+                                        WiFi
                                     </span>
                                 </div>
                             </div>

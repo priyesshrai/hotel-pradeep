@@ -104,7 +104,7 @@ export default function Rooms() {
                                     <div className="line-dec"></div>
                                     <div className="book">
                                         <div>
-                                            <div className="price">{room.price}<span>/ night</span></div>
+                                            <div className="price">Rs. {room.price}<span>/ night</span></div>
                                         </div>
                                         <div><a href="#" className="button-3">Book now</a></div>
                                     </div>

@@ -14,7 +14,7 @@ export default function Rooms() {
                     <div className="owl-carousel owl-theme">
                         <div className="item">
                             <div className="img">
-                                <img src="/img/rooms/room-01.jpg" className="img-fluid" alt="" />
+                                <img src="/img/rooms/delux.jpg" className="img-fluid" alt="" />
                             </div>
                             <div className="cont">
                                 <div className="title">
@@ -33,7 +33,7 @@ export default function Rooms() {
                             </div>
                         </div>
                         <div className="item">
-                            <div className="img"><img src="/img/rooms/room-03.jpg" className="img-fluid" alt="" /></div>
+                            <div className="img"><img src="/img/rooms/super-delux.jpg" className="img-fluid" alt="" /></div>
                             <div className="cont">
                                 <div className="title">
                                     <a href="#">Super Deluxe </a>
@@ -51,7 +51,7 @@ export default function Rooms() {
                             </div>
                         </div>
                         <div className="item">
-                            <div className="img"><img src="/img/rooms/room-02.jpg" className="img-fluid" alt="" /></div>
+                            <div className="img"><img src="/img/rooms/executive.jpg" className="img-fluid" alt="" /></div>
                             <div className="cont">
                                 <div className="title">
                                     <a href="#">Executives rooms</a>

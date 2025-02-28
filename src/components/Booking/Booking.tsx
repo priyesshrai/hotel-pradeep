@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Booking() {
   return (
-    <section className="section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="/img/gallery/aarti-banner.jpg">
+    <section className="section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="/img/bg-image/varanasi.jpg">
     <div className="container">
         <div className="row justify-content-center">
             <div className="col-md-12 text-center mb-20">

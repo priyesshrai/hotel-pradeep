@@ -60,6 +60,7 @@ export default function RootLayout({
         <Script strategy="afterInteractive" src="/js/YouTubePopUp.js"></Script>
         <Script strategy="afterInteractive" src="/js/select2.js"></Script>
         <Script strategy="afterInteractive" src="/js/datepicker.js"></Script>
+        <Script strategy="afterInteractive" src="/js/vegas.slider.min.js"></Script>
         <Script strategy="afterInteractive" src="/js/custom.js"></Script>
       </body>
     </html>

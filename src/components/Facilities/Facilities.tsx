@@ -7,9 +7,9 @@ export default function Facilities() {
                 <div className="container">
                     <ul className="tab-buttons">
                         <li data-tab="#restaurant" className="tab-btn active-btn"><span>Restaurant</span></li>
-                        {/* <li data-tab="#banquet" className="tab-btn"><span>Banquet</span></li> */}
-                        <li data-tab="#conference" className="tab-btn"><span>Conference</span></li>
-                        {/* <li data-tab="#roofTop" className="tab-btn"><span>Roof Top Restaurant</span></li> */}
+                        <li data-tab="#bar" className="tab-btn"><span>Bar</span></li>
+                        <li data-tab="#parking" className="tab-btn"><span>Parking</span></li>
+                        <li data-tab="#laundry" className="tab-btn"><span>In House Laundry</span></li>
                     </ul>
                 </div>
             </div>
@@ -19,12 +19,12 @@ export default function Facilities() {
                     <div className="tab active-tab" id="restaurant">
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-12">
-                                <img src="/img/about/about-01.jpg" className="img-fluid" alt="" style={{height:"25rem", objectFit:"cover"}} />
+                                <img src="/img/gallery/restaurant.jpg" className="img-fluid" alt="" style={{ height: "25rem", objectFit: "cover" }} />
                             </div>
                             <div className="col-lg-5 offset-lg-1 col-md-12">
                                 <div className="section-subtitle">FLAVORS OF PRADEEP</div>
-                                <div className="section-title">RESTAURANT</div>
-                                <p className="mb-25">A multi-cuisine dining experience that brings together rich flavors and warm hospitality.</p>
+                                <div className="section-title">Poonam Restaurant</div>
+                                <p className="mb-25">Enjoy a variety of tasty dishes in a cozy and friendly setting. Perfect for family meals or casual dining.</p>
                                 <ul className="list-unstyled list mb-30">
                                     <li>
                                         <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
@@ -50,73 +50,66 @@ export default function Facilities() {
                         </div>
                     </div>
 
-                    {/* <div className="tab" id="banquet">
+                    <div className="tab" id="bar">
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-12">
-                                <img src="img/offers/06.jpg" className="img-fluid" alt="" />
+                                <img src="/img/gallery/bar.jpg" className="img-fluid" alt="" />
                             </div>
                             <div className="col-lg-5 offset-lg-1 col-md-12">
-                                <div className="section-title">BANQUET HALL</div>
-                                <p className="mb-25">A grand venue for weddings, celebrations, and corporate events with elegant decor.</p>
+                                <div className="section-title">Bar</div>
+                                <p className="mb-25">Unwind with a great selection of drinks in a relaxing space. A perfect spot to enjoy with friends or alone.</p>
                                 <ul className="list-unstyled list mb-30">
                                     <li>
                                         <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
                                         <div className="list-text">
-                                            <p>Capacity: Up to 300 guests</p>
+                                            <p> Opening Hours: 5.00 pm – 11.00 pm (daily)</p>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div> */}
-
-                    <div className="tab" id="conference">
-                        <div className="row justify-content-center align-items-center">
-                            <div className="col-lg-6 col-md-12">
-                                <img src="/img/about/about-banner-03.jpg" className="img-fluid" alt="" style={{height:"25rem", objectFit:"cover"}}/>
-                            </div>
-                            <div className="col-lg-5 offset-lg-1 col-md-12">
-                                {/* <div className="section-subtitle">Indoor & Outdoor</div> */}
-                                <div className="section-title">CONFERENCE HALL</div>
-                                <p className="mb-25">A well-equipped space designed for business meetings and seminars.</p>
-                                <ul className="list-unstyled list mb-30">
-                                    <li>
-                                        <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
-                                        <div className="list-text">
-                                            <p>Available: 9:00 AM – 9:00 PM (daily)</p>
-                                        </div>
-                                    </li>
-                                    {/* <li>
-                                        <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
-                                        <div className="list-text">
-                                            <p>Outdoor pool swimming</p>
-                                        </div>
-                                    </li> */}
-                                </ul>
-                                <a href="#" className="button-3"><i className="fa-solid fa-person-swimming"></i>Book Now</a>
                             </div>
                         </div>
                     </div>
 
-                    {/* <div className="tab" id="roofTop">
+                    <div className="tab" id="parking">
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-12">
-                                <img src="img/offers/08.jpg" className="img-fluid" alt="" />
+                                <img src="/img/gallery/parking.jpg" className="img-fluid" alt="" style={{ height: "25rem", objectFit: "cover" }} />
                             </div>
                             <div className="col-lg-5 offset-lg-1 col-md-12">
-                                <div className="section-title">ROOFTOP RESTAURANT</div>
-                                <p className="mb-25">Dine under the open sky with authentic Indian cuisine and a scenic garden view.</p>
+                                {/* <div className="section-subtitle">Indoor & Outdoor</div> */}
+                                <div className="section-title">Parking Facility</div>
+                                <p className="mb-25">Spacious and secure parking is available for guests. Park your vehicle with ease and enjoy a stress-free stay.</p>
                                 <ul className="list-unstyled list mb-30">
                                     <li>
                                         <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
                                         <div className="list-text">
-                                            <p>Open: 6:30 PM – 11:00 PM (daily)</p>
+                                            <p>Availability: 24/7</p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
+
+                    <div className="tab" id="laundry">
+                        <div className="row justify-content-center align-items-center">
+                            <div className="col-lg-6 col-md-12">
+                                <img src="/img/gallery/laundry.jpg" className="img-fluid" alt="" />
+                            </div>
+                            <div className="col-lg-5 offset-lg-1 col-md-12">
+                                <div className="section-title">Laundry</div>
+                                <p className="mb-25">Quick and convenient laundry service for fresh and clean clothes. Enjoy a comfortable stay without any worries.</p>
+                                <ul className="list-unstyled list mb-30">
+                                    <li>
+                                        <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
+                                        <div className="list-text">
+                                            <p>Service Hours: 7.00 am – 8.00 pm (daily)</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -15,7 +15,7 @@ export default function Footer() {
                                         <span>PRADEEP</span>
                                     </div>
                                 </div>
-                                <p>Hotel Pradeep offers a comfortable stay with warm hospitality in the heart of Varanasi. Enjoy delicious dining at Poonam and a scenic rooftop experience at Eden.</p>
+                                <p>Hotel Pradeep is a paragon of luxury, situated in the vibrant heart of Varanasi. Its prime location ensures easy access to major attractions and essential services, making it an ideal choice for both leisure and business travelers.</p>
                                 <div className="social-icons">
                                     <ul className="list-inline">
                                         <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -31,7 +31,7 @@ export default function Footer() {
                                 <p>Jagatganj, Varanasi-221002
                                     <br />(U.P.) India
                                 </p>
-                                <div className="phone"><a href="tel:+9105422204963"> +91 0542-2204963, 2207231   </a></div>
+                                <div className="phone"><a href="tel:+9105422204963"> (+91) 0542-2204963, 2207231   </a></div>
                                 <div className="mail"><a href="mailto:info@hotelpradeep.com">info@hotelpradeep.com</a></div>
                             </div>
                         </div>

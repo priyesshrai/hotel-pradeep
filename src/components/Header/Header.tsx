@@ -29,7 +29,7 @@ export default function Header() {
                         <div className="col-md-6">
                             <div className="widget mr-30">
                                 <a href="tel:+9105422204963">
-                                    <i className="fa-solid fa-phone"></i>+91 0542-2204963, 2207231
+                                    <i className="fa-solid fa-phone"></i>(+91) 0542-2204963, 2207231
                                 </a>
                             </div>
                             <div className="widget">

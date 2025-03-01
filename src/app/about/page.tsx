@@ -80,7 +80,7 @@ export default function page() {
                 </div>
             </section>
 
-            <section className="clients bg-lightbrown" style={{marginBottom:"30px"}}>
+            <section className="clients bg-lightbrown" style={{ marginBottom: "30px" }}>
                 <div className="container">
                     <div className="row wrap">
                         <div className="col-md-12">
@@ -106,7 +106,7 @@ export default function page() {
                 </div>
             </section>
 
-            <Booking/>
+            <Booking />
         </>
     )
 }

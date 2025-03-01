@@ -19,7 +19,7 @@ export default function page() {
           <div className="row">
             <div className="col-12">
               {/* <div className="section-subtitle">ABOUT HOTEL PRADEEP </div> */}
-              <div className="section-title" style={{ textAlign: "center" }}>Experience FIT Tariff Executive Comfort in Varanasi</div>
+              <div className="section-title" style={{ textAlign: "center" }}>Affordable Luxury in Varanasi with Hotel Pradeep</div>
               <p>
                 Hotel Pradeep in Varanasi offers modern, comfortable rooms with flexible occupancy options under the FIT Tariff – European Plan (Executive). Located in the spiritual heart of the city, it's the perfect base for exploring Varanasi's rich heritage and vibrant culture.
               </p>
@@ -70,7 +70,7 @@ export default function page() {
               <h1>Additional Info</h1>
               <p>Kids below 12 years can share the room free!</p>
               <p>Luxury Tax: 5% + 7.42% applies.</p>
-              <p>Check-out Time: 12 Noon. Enjoy your stay!</p>
+              <p>Check-out Time: 12 Noon. <span style={{fontWeight:"700", color:"#2d3091"}}>Enjoy your stay!</span></p>
             </div>
           </div>
 

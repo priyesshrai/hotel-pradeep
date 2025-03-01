@@ -4,7 +4,7 @@ export default function Slider() {
         {
             id: 1,
             image: '/img/banner/aarti-banner.jpg',
-            title: 'Best 3-Star Hotel in Varanasi for a Perfect Stay',
+            title: 'A 3-Star Hotel Approved by the Ministry of Tourism, Government of India',
             subtitle: 'HOTEL PRADEEP',
         },
         {

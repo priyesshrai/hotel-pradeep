@@ -31,11 +31,11 @@ export default function page() {
               <div className="tariff-card">
                 <div className="tariff-card-image">
                   <img src="/img/tariff/single.jpg" alt="" />
-                  <span>Executive</span>
+                  {/* <span>Executive</span> */}
                 </div>
                 <div className="tariff-title">
-                  <p>Single :</p>
-                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 3500</span>
+                  <p>Delux :</p>
+                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 4000</span>
                 </div>
               </div>
             </div>
@@ -43,11 +43,11 @@ export default function page() {
               <div className="tariff-card">
                 <div className="tariff-card-image">
                   <img src="/img/tariff/double.jpg" alt="" />
-                  <span>Executive</span>
+                  {/* <span>Executive</span> */}
                 </div>
                 <div className="tariff-title">
-                  <p>Double :</p>
-                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 4500</span>
+                  <p>Executive :</p>
+                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 6000</span>
                 </div>
               </div>
             </div>
@@ -55,11 +55,11 @@ export default function page() {
               <div className="tariff-card">
                 <div className="tariff-card-image">
                   <img src="/img/tariff/extra.jpg" alt="" />
-                  <span>Executive</span>
+                  {/* <span>Executive</span> */}
                 </div>
                 <div className="tariff-title">
-                  <p>Extra Person :</p>
-                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 1500</span>
+                  <p>Super Delux :</p>
+                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 5000</span>
                 </div>
               </div>
             </div>

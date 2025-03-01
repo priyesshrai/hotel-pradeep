@@ -110,7 +110,7 @@ export default function Rooms() {
                                     <div className="line-dec"></div>
                                     <div className="book">
                                         <div>
-                                            <div className="price">Rs. {room.price}<span>/ night</span></div>
+                                            <div className="price"><i className="fa-regular fa-indian-rupee-sign"></i> {room.price}<span>/ night</span></div>
                                         </div>
                                         <div><a href="#" onClick={() => setIsFormOpen(true)} className="button-3">Book now</a></div>
                                     </div>

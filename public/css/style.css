@@ -975,7 +975,7 @@ blockquote cite:before {
 
 /* ======= Section style ======= */
 .section-padding {
-  padding: 120px 0;
+  padding: 70px 0;
 }
 .section-title {
   font-family: "Gilda Display", serif;
@@ -4912,7 +4912,7 @@ body.mfp-zoom-out-cur {
 }
 .contact .item {
   position: relative;
-  height: 300px;
+  height: 250px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -6124,4 +6124,13 @@ body.mfp-zoom-out-cur {
     }
   }
 
+}
+
+.price i{
+  font-size: 25px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  cursor: pointer;
 }

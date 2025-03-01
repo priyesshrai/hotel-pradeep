@@ -41,7 +41,7 @@ export default function Facilities() {
                                     <li>
                                         <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>
                                         <div className="list-text">
-                                            <p>Dinne: 6.30 pm – 10.00 pm (daily)</p>
+                                            <p>Dinner: 6.30 pm – 10.00 pm (daily)</p>
                                         </div>
                                     </li>
                                 </ul>

@@ -5,26 +5,21 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { name, email, phone, message, checkIn, checkOut, roomType, noOfRooms, noOfPersons } = body;
+        const { name, email, phone, message } = body;
 
-        if (!name || !phone || !checkIn || !checkOut || !roomType || !noOfRooms || !noOfPersons) {
+        if (!name || !phone || !email || !message) {
             return NextResponse.json({ message: 'All fields are required' });
         }
 
         const { data, error } = await resend.emails.send({
             from: "Acme <onboarding@resend.dev>",
             to: ["priyeshrai.dev@gmail.com"],
-            subject: "New Room Booking Enquiry from Hotel Pradeep Website",
+            subject: "Feedback Message from Hotel Pradeep Website Contact Page",
             html: `
-            <h1>We have received new Enquiry for Room Booking in Hotel Pradeep with details as provided below:</h1> <br/> 
+            <h1>We have received new Feedback Message from Hotel Pradeep Website Contact Page with details as given below:</h1> <br/> 
             <strong>Name:- ${name} <br/> 
             Email:- ${email || ''} <br/> 
             Contact No:- ${phone} <br/>
-            Check-In Date:- ${checkIn} <br/>
-            Check-Out Date:- ${checkOut} <br/>
-            Room Type:- ${roomType} <br/>
-            No. of Rooms:- ${noOfRooms} <br/>
-            No. of Persons:- ${noOfPersons} <br/>
             Message:- ${message || ''} <br/> </strong>`,
         });
 

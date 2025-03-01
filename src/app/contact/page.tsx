@@ -1,14 +1,69 @@
+'use client'
 import Booking from '@/components/Booking/Booking'
-import React from 'react'
+import React, { useState } from 'react'
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
+import FormLoader from '@/components/FormLoader/FormLoader';
 
 export default function page() {
+    const [feedback, setFeedback] = useState(
+        {
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+        })
+    const [loading, setLoading] = useState(false)
+    function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+        setFeedback(prevData => ({ ...prevData, [e.target.name]: e.target.value }))
+    }
+    function handleSubmit(e: any) {
+        e.preventDefault();
+        setLoading(true)
+        toast.promise(
+            axios
+                .post("/api/feedback", feedback, {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                .then((response) => {
+                    if (response.status === 200) {
+                        setFeedback({
+                            name: "",
+                            email: "",
+                            phone: "",
+                            message: "",
+                        });
+                        setLoading(false);
+                    }
+                })
+                .catch((error) => {
+                    console.log("Error sending message", error.message);
+                    throw error;
+                }), {
+            loading: "Sending your enquiry...",
+            success: "Enquiry sent, we will reply within 24-48 hours",
+            error: "Error sending enquery. Please try again.",
+        },
+            {
+                style: {
+                    minWidth: '250px',
+                },
+                success: {
+                    duration: 3000,
+                },
+            }
+
+        );
+    }
     return (
         <>
             <section className="banner-header valign bg-img bg-fixed">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <div className="title">COntact Us</div>
+                            <div className="title">Contact Us</div>
                         </div>
                     </div>
                 </div>
@@ -19,32 +74,18 @@ export default function page() {
                         <div className="col-lg-7 col-md-12">
                             <div className="row mb-30">
                                 <div className="col-lg-6 col-md-12 mb-25">
-                                    <div className="item">
-                                        <div className="front">
-                                            <div className="contents"> <span className="fa-thin fa-location-dot"></span>
-                                                <h2 className="title">Hotel Pradeep, Varanasi</h2>
-                                                <p className="text">Jagatganj, Varanasi-221002 (U.P.) India</p>
-                                            </div>
-                                        </div>
-                                        <div className="back"> <img className="img img-fluid" src="img/contact2.jpg" />
-                                            <div className="contents">
-                                                <div className="btnx">Location map</div>
-                                            </div>
+                                    <div className="item" style={{ backgroundColor: "#ffffff" }}>
+                                        <div className="contents"> <span className="fa-thin fa-location-dot"></span>
+                                            <h2 className="title">Hotel Pradeep, Varanasi</h2>
+                                            <p className="text">Jagatganj, Varanasi-221002 (U.P.) India</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-12 mb-25">
-                                    <div className="item">
-                                        <div className="front">
-                                            <div className="contents"> <span className="fa-thin fa-phone"></span>
-                                                <h2 className="title">Let's talk with us</h2>
-                                                <p className="text">Phone: +91 0542-2204963, 2207231</p>
-                                            </div>
-                                        </div>
-                                        <div className="back"> <img className="img img-fluid" src="img/contact3.jpg" />
-                                            <div className="contents">
-                                                <div className="btnx">Talk with us</div>
-                                            </div>
+                                    <div className="item" style={{ backgroundColor: "#ffffff" }}>
+                                        <div className="contents"> <span className="fa-thin fa-phone"></span>
+                                            <h2 className="title">Let's talk with us</h2>
+                                            <p className="text">Phone: (+91) 0542-2204963, 2207231</p>
                                         </div>
                                     </div>
                                 </div>
@@ -58,7 +99,7 @@ export default function page() {
                             </div>
                         </div>
                         <div className="col-lg-4 offset-lg-1 col-md-12">
-                            <div className="form2-sidebar mt--240">
+                            <div className="form2-sidebar">
                                 <form action="#" className="form2">
                                     <div className="head">
                                         <div className="row">
@@ -70,22 +111,23 @@ export default function page() {
                                     <div className="cont">
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12 form-group">
-                                                <input type="text" placeholder="Name" required />
+                                                <input type="text" placeholder="Name" name='name' onChange={handleChange}
+                                                    value={feedback.name} required />
                                             </div>
                                             <div className="col-lg-12 col-md-12 form-group">
-                                                <input type="email" placeholder="Email" required />
+                                                <input type="email" placeholder="Email" name='email' onChange={handleChange}
+                                                    value={feedback.email} required />
                                             </div>
                                             <div className="col-lg-12 col-md-12 form-group">
-                                                <input type="text" placeholder="Phone" required />
+                                                <input type="text" placeholder="Phone" name='phone' onChange={handleChange}
+                                                    value={feedback.phone} required />
                                             </div>
                                             <div className="col-md-12 form-group">
-                                                <input type="text" placeholder="Subject" />
-                                            </div>
-                                            <div className="col-md-12 form-group">
-                                                <textarea name="message" id="message" cols={30} rows={4} placeholder="Message"></textarea>
+                                                <textarea name="message" id="message" onChange={handleChange}
+                                                    value={feedback.message} cols={30} rows={4} placeholder="Message"></textarea>
                                             </div>
                                             <div className="col-md-12">
-                                                <button className="button-3"><i className="fa-light fa-paper-plane"></i> Submit</button>
+                                                <button onClick={handleSubmit} className="button-3"><i className="fa-light fa-paper-plane"></i> {loading ? <FormLoader /> : "Submit"}</button>
                                             </div>
                                         </div>
                                     </div>
@@ -142,6 +184,7 @@ export default function page() {
                     </div>
                 </div>
             </section> */}
+            <Toaster position="top-right" />
             <Booking />
         </>
     )

@@ -1,7 +1,10 @@
 'use client'
 import React from 'react'
+import { useAppContext } from '@/app/context/Context';
+import Form from '@/components/Form/Form';
 
 export default function Rooms() {
+    const { setIsFormOpen, isFormOpen } = useAppContext();
     const roomsData = [
         {
             title: 'Deluxe Rooms',
@@ -20,6 +23,7 @@ export default function Rooms() {
                 '/img/rooms/delux/delux-04.jpg',
             ],
             left: true,
+            id: "delux"
         },
         {
             title: 'Super Deluxe Room',
@@ -38,6 +42,7 @@ export default function Rooms() {
                 '/img/rooms/super/super-04.jpg',
             ],
             left: false,
+            id: "super-delux"
         },
         {
             title: 'Executive Rooms',
@@ -56,6 +61,7 @@ export default function Rooms() {
                 'img/rooms/executive/4.jpg',
             ],
             left: true,
+            id: "executive"
         },
     ]
     return (
@@ -63,7 +69,7 @@ export default function Rooms() {
             <div className="container">
                 {
                     roomsData.map((room, index) => (
-                        <div key={room.title} className="row g-0 justify-content-center align-items-center bg-lightbrown br-0550 mb-90">
+                        <div key={room.title} id={room.id} className="row g-0 justify-content-center align-items-center bg-lightbrown br-0550 mb-90">
                             {room.left && (
                                 <div className="col-lg-7 col-md-12">
                                     <div className="owl-carousel owl-theme">
@@ -106,7 +112,7 @@ export default function Rooms() {
                                         <div>
                                             <div className="price">Rs. {room.price}<span>/ night</span></div>
                                         </div>
-                                        <div><a href="#" className="button-3">Book now</a></div>
+                                        <div><a href="#" onClick={() => setIsFormOpen(true)} className="button-3">Book now</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -127,6 +133,7 @@ export default function Rooms() {
                     ))
                 }
             </div>
+            {isFormOpen && <Form />}
         </section>
     )
 }

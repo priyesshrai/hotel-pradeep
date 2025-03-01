@@ -20,7 +20,7 @@ export default function OurFacilities() {
         },
         {
             icon: 'fa-thin fa-champagne-glasses',
-            title: 'Bar',
+            title: 'Mini Bar',
             description: 'Relax with a drink at our in-house bar.'
         },
         {
@@ -62,6 +62,51 @@ export default function OurFacilities() {
             icon: 'fa-thin fa-car',
             title: 'Parking Facilities',
             description: 'Secure parking for your vehicle.'
+        },
+        {
+            icon: 'fa-thin fa-person-hiking',
+            title: 'Travel Desk',
+            description: 'Expert assistance with local travel arrangements and bookings.'
+        },
+        {
+            icon: 'fa-thin fa-vault',
+            title: 'Safe Deposit Locker',
+            description: 'Every room has a secure storage facility for your valuables.'
+        },
+        {
+            icon: 'fa-thin fa-door-open',
+            title: '36 Elegantly Appointed Rooms',
+            description: 'Designed for a comfortable and stylish stay.'
+        },
+        {
+            icon: 'fa-thin fa-person-to-door',
+            title: 'Attached Bathrooms',
+            description: 'Private and convenient for every room.'
+        },
+        {
+            icon: 'fa-thin fa-water',
+            title: 'Hot & Cold Running Water',
+            description: 'Available round the clock for your comfort.'
+        },
+        {
+            icon: 'fa-thin fa-person-booth',
+            title: 'Banquet & Conference Facilities',
+            description: 'Ideal for meetings and events.'
+        },
+        {
+            icon: 'fa-thin fa-waveform',
+            title: 'Soundproof Hotel',
+            description: 'Enjoy a peaceful stay in the heart of Varanasi.'
+        },
+        {
+            icon: 'fa-thin fa-location-smile',
+            title: 'Prime Location',
+            description: 'Walking distance to the Ganges River, temples, and key offices.'
+        },
+        {
+            icon: 'fa-thin fa-plane-departure',
+            title: 'Easy Access',
+            description: 'Just 26 km from Varanasi Airport.'
         },
     ]
     return (

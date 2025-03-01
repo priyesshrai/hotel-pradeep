@@ -19,8 +19,8 @@ export default function Gallery({ imageData, title }: GalleryProps) {
                         <div className="owl-carousel owl-theme">
                             {
                                 imageData.map((uri, index) => (
-                                    <div className="item">
-                                        <a key={uri} href={uri} title="" className="gallery-masonry-item-img-link img-zoom">
+                                    <div className="item" key={index}>
+                                        <a href={uri} title="" className="gallery-masonry-item-img-link img-zoom">
                                             <div className="img"> <img src={uri} className="img-fluid mx-auto d-block" alt="" /> </div>
                                         </a>
                                     </div>

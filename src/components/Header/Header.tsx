@@ -5,7 +5,7 @@ import { useAppContext } from '@/app/context/Context';
 
 
 export default function Header() {
-    const { isFormOpen, setIsFormOpen} = useAppContext();
+    const { isFormOpen, setIsFormOpen } = useAppContext();
     const pathname = usePathname();
     const navItems = [
         { label: 'Home', href: '/' },
@@ -59,8 +59,10 @@ export default function Header() {
                             <img src="/img/logo/logo_trans.png" className="logo-img" alt="Hotel Pradeep Logo" />
                         </a>
                         <div className="hotel-name">
-                            <span className="fir">HOTEL</span>
-                            <span>PRADEEP</span>
+                            <a href="/">
+                                <span className="fir">HOTEL</span>
+                                <span>PRADEEP</span>
+                            </a>
                         </div>
                     </div>
                     <button

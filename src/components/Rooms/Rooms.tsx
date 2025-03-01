@@ -16,7 +16,7 @@ export default function Rooms() {
                             <div className="img"><img src="/img/rooms/super-delux.jpg" className="img-fluid" alt="" /></div>
                             <div className="cont">
                                 <div className="title">
-                                    <a href="#">Super Deluxe </a>
+                                    <a href="/rooms#super-delux">Super Deluxe </a>
                                 </div>
                                 <div className="details">
                                     <span>
@@ -42,7 +42,7 @@ export default function Rooms() {
                             <div className="img"><img src="/img/rooms/executive.jpg" className="img-fluid" alt="" /></div>
                             <div className="cont">
                                 <div className="title">
-                                    <a href="#">Executives rooms</a>
+                                    <a href="/rooms#executive">Executives rooms</a>
                                 </div>
                                 <div className="details">
                                     <span>
@@ -70,7 +70,7 @@ export default function Rooms() {
                             </div>
                             <div className="cont">
                                 <div className="title">
-                                    <a href="#">Deluxe</a>
+                                    <a href="/rooms#delux">Deluxe</a>
                                 </div>
                                 <div className="details">
                                     <span>

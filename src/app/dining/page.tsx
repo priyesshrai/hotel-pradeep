@@ -17,12 +17,12 @@ export default function page() {
                     <div className="row justify-content-center">
                         <div className="col-md-12 text-center">
                             {/* <div className="subtitle text-light">Address of taste</div> */}
-                            <div className="title mb-0">About Poonam Restaurant</div>
+                            <div className="title mb-0">About Our Restaurant</div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="page-details section-padding">
+            <section className="page-details" style={{margin:"40px 0"}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -64,7 +64,26 @@ export default function page() {
                     </div>
                 </div>
             </section>
-            <Menu />
+
+            <section className="page-details">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="section-subtitle">Address of taste</div>
+                            <div className="section-title">Eden Rooftop Restaurant – A Taste of Elegance</div>
+                        </div>
+                    </div>
+                    <div className="row mb-30">
+                        <div className="col-md-12">
+                            <p>Eden Rooftop Restaurant at Hotel Pradeep is a wonderful place to enjoy authentic Indian cuisine. With its peaceful atmosphere and beautiful garden view, it provides a relaxing dining experience for guests. The restaurant's open-air setting adds to the charm, whether you are looking for a quiet meal or a special evening with family and friends.</p>
+
+                            <p>The menu features a variety of delicious Indian dishes, carefully prepared to bring out rich flavors and traditional tastes. The combination of great food, a scenic view, and a welcoming ambiance makes it a perfect spot to unwind and enjoy a memorable dining experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* <Menu /> */}
             <Gallery imageData={galleryData} title="Restaurant Gallery" />
         </>
     )

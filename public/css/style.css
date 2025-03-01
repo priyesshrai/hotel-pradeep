@@ -1258,11 +1258,14 @@ blockquote cite:before {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    font-size: 35px;
-    color: #2d3091;
+
+    a{
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      font-size: 35px;
+      color: #2d3091;
+    }
     /* font-family: "Gilda Display", serif; */
 
     .fir {
@@ -6001,7 +6004,7 @@ body.mfp-zoom-out-cur {
       position: relative;
       max-width: 500px;
       width: 100%;
-      padding: 40px 20px 20px 20px;
+      padding: 20px 20px 20px 20px;
       background: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -6011,7 +6014,6 @@ body.mfp-zoom-out-cur {
       .main-input-container {
         position: relative;
         width: 100%;
-        margin-bottom: 10px;
 
         input,
         textarea,
@@ -6025,18 +6027,31 @@ body.mfp-zoom-out-cur {
           padding: 10px 40px;
           font-size: 20px;
           margin-left: auto;
-          display: block;
+          display: flex;
           margin-top: 35px;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .main-form-title {
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+        width: fit-content;
+        span {
+          color: #2d3091;
+          font-size: 25px;
         }
       }
     }
   }
 }
 
-.colse-btn{
+.colse-btn {
   position: absolute;
-  top: 5px;
-  right:5px;
+  top: 15px;
+  right: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -6047,5 +6062,4 @@ body.mfp-zoom-out-cur {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-
 }

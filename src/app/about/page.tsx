@@ -1,4 +1,5 @@
 import About from '@/components/About/About'
+import Booking from '@/components/Booking/Booking'
 import React from 'react'
 
 export default function page() {
@@ -33,7 +34,7 @@ export default function page() {
 
                             <p className="mb-40">At <strong>Hotel Pradeep </strong>, we offer more than just a stay—we offer an experience of comfort, taste, and beauty.</p>
 
-                            <a href="#" className="button-3 mb-15">Book Now</a>
+                            <a href="#booking-form" className="button-3 mb-15">Book Now</a>
                             <div className="phone"><a href="tel:+917408423503"><i className="fa-light fa-phone"></i>+917408423503</a></div>
                         </div>
 
@@ -70,7 +71,7 @@ export default function page() {
                                 </strong>
                             </p>
 
-                            <a href="#" className="button-3 mb-15">Book Now</a>
+                            <a href="#booking-form" className="button-3 mb-15">Book Now</a>
                             <div className="phone"><a href="tel:+917408423503"><i className="fa-light fa-phone"></i>+917408423503</a></div>
                         </div>
                         <div className="col-lg-3 offset-lg-1 col-md-6 mb-20 mt-45"> <img className="rounded-2 animation-float1" src="/img/about/about-03.jpg" alt="" /> </div>
@@ -79,7 +80,7 @@ export default function page() {
                 </div>
             </section>
 
-            <section className="clients bg-lightbrown">
+            <section className="clients bg-lightbrown" style={{marginBottom:"30px"}}>
                 <div className="container">
                     <div className="row wrap">
                         <div className="col-md-12">
@@ -104,6 +105,8 @@ export default function page() {
                     </div>
                 </div>
             </section>
+
+            <Booking/>
         </>
     )
 }

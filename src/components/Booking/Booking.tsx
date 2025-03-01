@@ -19,6 +19,23 @@ export default function Booking() {
         setToday(formattedDate);
     }, []);
 
+    useEffect(() => {
+        if (customerData.checkIn) {
+            const selectedDate = new Date(customerData.checkIn);
+            selectedDate.setDate(selectedDate.getDate() + 1);
+            const newMinCheckOut = selectedDate.toISOString().split("T")[0];
+
+            setTomorrow(newMinCheckOut);
+
+            if (customerData.checkOut && customerData.checkOut < newMinCheckOut) {
+                setCustomerData((prevData: any) => ({
+                    ...prevData,
+                    checkOut: "",
+                }));
+            }
+        }
+    }, [customerData.checkIn]);
+
     function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         setCustomerData({ ...customerData, [e.target.name]: e.target.value });
     }
@@ -31,6 +48,7 @@ export default function Booking() {
 
     return (
         <section
+            id='booking-form'
             className="section-padding bg-img bg-fixed"
             data-overlay-dark="5"
             data-background="/img/bg-image/varanasi.jpg"

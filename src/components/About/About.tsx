@@ -17,8 +17,8 @@ export default function About() {
                         <a href="#booking-form" className="button-3 mb-15">Book Now</a>
                         <div className="phone"><a href="tel:+917408423503"><i className="fa-light fa-phone"></i>+917408423503</a></div>
                     </div>
-                    <div className="col-lg-3 offset-lg-1 col-md-6 mb-20 mt-45"> <img className="rounded-2 animation-float1" src="/img/about/about-03.jpg" alt="" /> </div>
-                    <div className="col-lg-3 col-md-6 mb-20"> <img className="rounded-2 animation-float2" src="/img/about/about-02.jpg" alt="" /> </div>
+                    <div className="col-lg-3 offset-lg-1 col-md-6 mb-20 mt-45"> <img className="rounded-2 animation-float1" src="/img/about/abt-01.jpg" alt="" /> </div>
+                    <div className="col-lg-3 col-md-6 mb-20"> <img className="rounded-2 animation-float2" src="/img/about/abt-02.jpg" alt="" /> </div>
                 </div>
             </div>
         </section>

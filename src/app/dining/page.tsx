@@ -9,6 +9,7 @@ export default function page() {
         "img/restaurant/3.jpg",
         "img/restaurant/4.jpg",
         "img/restaurant/5.jpg",
+        "img/restaurant/5.jpg",
     ]
     return (
         <>

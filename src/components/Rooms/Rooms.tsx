@@ -50,8 +50,12 @@ export default function Rooms() {
                                         2-3 guests
                                     </span>
                                     <span>
+                                        <i className="fa-thin fa-champagne-glasses"></i>
+                                        Mini Bar
+                                    </span>
+                                    <span>
                                         <i className="fa-thin fa-bath"></i>
-                                        1 Attached Bathroom
+                                            Attached Bathroom
                                     </span>
                                     <span>
                                         <i className="fa-thin fa-expand"></i>

@@ -46,8 +46,8 @@ export default function page() {
                   {/* <span>Executive</span> */}
                 </div>
                 <div className="tariff-title">
-                  <p>Executive :</p>
-                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 6000</span>
+                  <p>Super Delux :</p>
+                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 5000</span>
                 </div>
               </div>
             </div>
@@ -58,8 +58,8 @@ export default function page() {
                   {/* <span>Executive</span> */}
                 </div>
                 <div className="tariff-title">
-                  <p>Super Delux :</p>
-                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 5000</span>
+                  <p>Executive :</p>
+                  <span><i className="fa-regular fa-indian-rupee-sign"></i> 6000</span>
                 </div>
               </div>
             </div>
@@ -69,8 +69,8 @@ export default function page() {
             <div className="col-12">
               <h1>Additional Info</h1>
               <p>Kids below 12 years can share the room free!</p>
-              <p>Luxury Tax: 5% + 7.42% applies.</p>
-              <p>Check-out Time: 12 Noon. <span style={{fontWeight:"700", color:"#2d3091"}}>Enjoy your stay!</span></p>
+              <p>GST : 12% applies.</p>
+              <p>Check-out Time: 12 Noon. <span style={{ fontWeight: "700", color: "#2d3091" }}>Enjoy your stay!</span></p>
             </div>
           </div>
 

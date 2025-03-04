@@ -52,8 +52,8 @@ export default function Services() {
                                     <div className="cont up">
                                         <div className="icon"> <i className="fa-thin fa-print"></i> </div>
                                         <div className="text">
-                                            <h5>Xerox and Fax Facilities</h5>
-                                            <p> Convenient document copying and fax services.</p>
+                                            <h5>Email and Xerox facilities</h5>
+                                            <p> Convenient document copying and email services.</p>
                                         </div>
                                     </div>
                                 </div>

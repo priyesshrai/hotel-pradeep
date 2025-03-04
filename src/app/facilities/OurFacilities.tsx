@@ -20,7 +20,7 @@ export default function OurFacilities() {
         },
         {
             icon: 'fa-thin fa-champagne-glasses',
-            title: 'Mini Bar',
+            title: 'Bar',
             description: 'Relax with a drink at our in-house bar.'
         },
         {
@@ -30,7 +30,7 @@ export default function OurFacilities() {
         },
         {
             icon: 'fa-thin fa-plate-utensils',
-            title: 'Vegetarian Restaurant',
+            title: 'Multi cuisine Restaurant',
             description: 'Enjoy delicious vegetarian meals at our restaurant.'
         },
         {
@@ -45,7 +45,7 @@ export default function OurFacilities() {
         },
         {
             icon: 'fa-thin fa-print',
-            title: 'Xerox and Fax Facilities',
+            title: 'Email and Xerox facilities',
             description: 'Convenient document copying and fax services.'
         },
         {
@@ -90,7 +90,7 @@ export default function OurFacilities() {
         },
         {
             icon: 'fa-thin fa-person-booth',
-            title: 'Banquet & Conference Facilities',
+            title: 'Conference Facilities',
             description: 'Ideal for meetings and events.'
         },
         {

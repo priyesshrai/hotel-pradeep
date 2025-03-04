@@ -23,7 +23,7 @@ export default function page() {
                     </div>
                 </div>
             </section>
-            <section className="page-details" style={{margin:"40px 0"}}>
+            <section className="page-details" style={{ margin: "40px 0" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -45,19 +45,19 @@ export default function page() {
                                 <li>
                                     <div className="page-list-icon"> <span className="ti-time"></span> </div>
                                     <div className="page-list-text">
-                                        <p>Breakfast: 7.00 am – 11.00 am (daily)</p>
+                                        <p>Breakfast: 7.30 am – 10.30 am (daily)</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="page-list-icon"> <span className="ti-time"></span> </div>
                                     <div className="page-list-text">
-                                        <p>Lunch: 12.00 noon – 2.00 pm (daily)</p>
+                                        <p>Lunch: 12.00 noon – 3.00 pm (daily)</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="page-list-icon"> <span className="ti-time"></span> </div>
                                     <div className="page-list-text">
-                                        <p>Dinner: open from 6.30 pm, last order at 10.00 pm (daily)</p>
+                                        <p>Dinner: open from 6.30 pm, last order at 10.30 pm (daily)</p>
                                     </div>
                                 </li>
                             </ul>

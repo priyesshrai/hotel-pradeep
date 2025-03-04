@@ -13,6 +13,7 @@ export default function Header() {
         { label: 'Rooms', href: '/rooms' },
         { label: 'Dining', href: '/dining' },
         { label: 'Facilities', href: '/facilities' },
+        { label: 'Gallery', href: '/gallery' },
         { label: 'Tariff', href: '/tariff' },
         { label: 'Contact', href: '/contact' },
     ];

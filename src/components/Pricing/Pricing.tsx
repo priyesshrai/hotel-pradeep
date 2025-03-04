@@ -14,7 +14,6 @@ export default function Pricing() {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="img-container">
                             <img src="/img/gallery/kashi.jpg" alt="" />
-                            <div className="img-overlay"></div>
                             <div className="img-content">
                                 <div className="img-title">
                                     <h3>Kashi Vishwanath Temple</h3>

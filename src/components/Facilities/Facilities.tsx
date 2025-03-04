@@ -7,7 +7,7 @@ export default function Facilities() {
                 <div className="container">
                     <ul className="tab-buttons">
                         <li data-tab="#restaurant" className="tab-btn active-btn"><span>Restaurant</span></li>
-                        <li data-tab="#bar" className="tab-btn"><span>Mini Bar</span></li>
+                        <li data-tab="#bar" className="tab-btn"><span> Bar</span></li>
                         <li data-tab="#parking" className="tab-btn"><span>Parking</span></li>
                         <li data-tab="#laundry" className="tab-btn"><span>In House Laundry</span></li>
                     </ul>
@@ -56,8 +56,8 @@ export default function Facilities() {
                                 <img src="/img/gallery/bar.jpg" className="img-fluid" alt="" />
                             </div>
                             <div className="col-lg-5 offset-lg-1 col-md-12">
-                                <div className="section-title">Mini Bar</div>
-                                <p className="mb-25">Relax and enjoy a refreshing drink at our Mini Bar. We offer a selection of soft drinks, fine spirits, and tasty snacks in a cozy and comfortable setting. Whether you want to unwind after a long day or have a quick bite, our Mini Bar is the perfect place to sit back and enjoy.</p>
+                                <div className="section-title"> Bar</div>
+                                <p className="mb-25">Relax and enjoy a refreshing drink at our Bar. We offer a selection of soft drinks, fine spirits, and tasty snacks in a cozy and comfortable setting. Whether you want to unwind after a long day or have a quick bite, our Bar is the perfect place to sit back and enjoy.</p>
                                 <ul className="list-unstyled list mb-30">
                                     <li>
                                         <div className="list-icon"> <span className="fa-regular fa-check"></span> </div>

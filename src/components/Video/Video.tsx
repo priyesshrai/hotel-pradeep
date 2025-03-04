@@ -12,7 +12,7 @@ export default function Video() {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="section-info">
-                            <div className="vdoTxt">Hotel Pradeep, a 3-star hotel approved by the Ministry of Tourism, India, offers comfort and warm hospitality in the vibrant city of Varanasi. Ideal for a peaceful and pleasant stay!</div>
+                            <p className="vdoTxt">Hotel Pradeep, a 3-star hotel approved by the Ministry of Tourism, India, offers comfort and warm hospitality in the vibrant city of Varanasi. Ideal for a peaceful and pleasant stay!</p>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default function Video() {
                 <div className="row mt-4">
                     <div className="col-md-12">
                         <div className="section-info">
-                            <div className="vdoTxt">With its prime location, Hotel Pradeep allows easy access to the city’s famous ghats, temples, and cultural sites. The well-furnished rooms and modern amenities ensure a relaxing experience. Guests can enjoy the vibrant charm of Varanasi while staying in a place that offers both convenience and comfort.</div>
+                            <p className="vdoTxt">With its prime location, Hotel Pradeep allows easy access to the city’s famous ghats, temples, and cultural sites. The well-furnished rooms and modern amenities ensure a relaxing experience. Guests can enjoy the vibrant charm of Varanasi while staying in a place that offers both convenience and comfort.</p>
                         </div>
                     </div>
                 </div>

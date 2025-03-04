@@ -2,12 +2,21 @@
 import React, { useState, useEffect } from 'react';
 import { useAppContext } from '@/app/context/Context';
 import Form from '../Form/Form';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
+interface CustomerData {
+    checkIn: string | null;
+    checkOut: string | null;
+    noOfPersons: number | string;
+    noOfRooms: number | string;
+}
 
 export default function Booking() {
     const { isFormOpen, setIsFormOpen, customerData, setCustomerData } = useAppContext();
 
-    const [today, setToday] = useState('');
-    const [tomorrow, setTomorrow] = useState('');
+    const [today, setToday] = useState<string>('');
+    const [tomorrow, setTomorrow] = useState<string>('');
 
     useEffect(() => {
         const currentDate = new Date();
@@ -23,32 +32,32 @@ export default function Booking() {
         if (customerData.checkIn) {
             const selectedDate = new Date(customerData.checkIn);
             selectedDate.setDate(selectedDate.getDate() + 1);
-            const newMinCheckOut = selectedDate.toISOString().split("T")[0];
-
+            const newMinCheckOut = selectedDate.toISOString().split('T')[0];
             setTomorrow(newMinCheckOut);
 
             if (customerData.checkOut && customerData.checkOut < newMinCheckOut) {
-                setCustomerData((prevData: any) => ({
+                setCustomerData((prevData: CustomerData) => ({
                     ...prevData,
-                    checkOut: "",
+                    checkOut: '',
                 }));
             }
         }
-    }, [customerData.checkIn]);
+    }, [customerData.checkIn, setCustomerData]);
 
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-        setCustomerData({ ...customerData, [e.target.name]: e.target.value });
-    }
+    const handleChange = (name: keyof CustomerData, value: string | number | Date) => {
+        const formattedValue = value instanceof Date ? value.toISOString().split('T')[0] : value;
+        setCustomerData((prevData: CustomerData) => ({ ...prevData, [name]: formattedValue }));
+    };
 
-    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         localStorage.setItem('customerData', JSON.stringify(customerData));
-        setIsFormOpen(!isFormOpen);
-    }
+        setIsFormOpen(true);
+    };
 
     return (
         <section
-            id='booking-form'
+            id="booking-form"
             className="section-padding bg-img bg-fixed"
             data-overlay-dark="5"
             data-background="/img/bg-image/varanasi.jpg"
@@ -61,19 +70,18 @@ export default function Booking() {
                     </div>
                 </div>
                 <div className="booking-inner clearfix">
-                    <form action="#" className="form1 clearfix" onSubmit={handleSubmit}>
+                    <form className="form1 clearfix" onSubmit={handleSubmit}>
                         <div className="col1 c1">
                             <div className="input1_wrapper border-l border-b border-t border-r">
                                 <label>Check in</label>
                                 <div className="input1_inner">
-                                    <input
-                                        value={customerData.checkIn || ''}
-                                        onChange={handleChange}
-                                        name="checkIn"
-                                        type="date"
-                                        className="form-control input"
-                                        placeholder="Check in"
-                                        min={today}
+                                    <DatePicker
+                                        selected={customerData.checkIn ? new Date(customerData.checkIn) : null}
+                                        onChange={(date: Date | null) => handleChange('checkIn', date || '')}
+                                        className="form-control "
+                                        placeholderText="Check in"
+                                        minDate={new Date()}
+                                        dateFormat="yyyy-MM-dd"
                                         required
                                     />
                                 </div>
@@ -83,14 +91,13 @@ export default function Booking() {
                             <div className="input1_wrapper border-l border-b border-t border-r">
                                 <label>Check out</label>
                                 <div className="input1_inner">
-                                    <input
-                                        value={customerData.checkOut || ''}
-                                        onChange={handleChange}
-                                        name="checkOut"
-                                        type="date"
+                                    <DatePicker
+                                        selected={customerData.checkOut ? new Date(customerData.checkOut) : null}
+                                        onChange={(date: Date | null) => handleChange('checkOut', date || '')}
                                         className="form-control input"
-                                        placeholder="Check out"
-                                        min={tomorrow}
+                                        placeholderText="Check out"
+                                        minDate={customerData.checkIn ? new Date(new Date(customerData.checkIn).setDate(new Date(customerData.checkIn).getDate() + 1)) : new Date(tomorrow)}
+                                        dateFormat="yyyy-MM-dd"
                                         required
                                     />
                                 </div>
@@ -101,9 +108,8 @@ export default function Booking() {
                                 <label>No. of Persons</label>
                                 <div className="input1_inner rn">
                                     <input
-                                        value={customerData.noOfPersons || ''} // Default to empty string if undefined
-                                        onChange={handleChange}
-                                        name="noOfPersons"
+                                        value={customerData.noOfPersons || ''}
+                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange('noOfPersons', e.target.value)}
                                         type="number"
                                         className="form-control input"
                                         placeholder="No. Of Persons"
@@ -118,9 +124,8 @@ export default function Booking() {
                                 <label>No. Of Rooms</label>
                                 <div className="input1_inner rn">
                                     <input
-                                        value={customerData.noOfRooms || ''} // Default to empty string if undefined
-                                        onChange={handleChange}
-                                        name="noOfRooms"
+                                        value={customerData.noOfRooms || ''}
+                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange('noOfRooms', e.target.value)}
                                         type="number"
                                         className="form-control input"
                                         placeholder="No. Of Rooms"
